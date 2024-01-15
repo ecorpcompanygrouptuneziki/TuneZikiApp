@@ -25,6 +25,8 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
 
     CLEAR(HEADER);
 
+    CLEAR(FOOTER);
+
     DISPLAY(APPNAME,'Tune Ziki');
 
     //STYLES ZONE
@@ -41,6 +43,11 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
     STYLED(APPNAME,'marginBottom','auto');
     STYLED(APPNAME,'fontSize','20px');
     STYLED(APPNAME,'color','white');
+    STYLED(HORIZONTALSCROLLINGDIV,'top','0');
+    STYLED(HORIZONTALSCROLLINGDIV,'left','0');
+    STYLED(HORIZONTALSCROLLINGDIV,'bottom','0');
+    STYLED(HEADER,'left','0');
+    STYLED(FOOTER,'left','0');
     
     //LAYOUT ZONE
     ADD(DIV,HORIZONTALSCROLLINGDIV);

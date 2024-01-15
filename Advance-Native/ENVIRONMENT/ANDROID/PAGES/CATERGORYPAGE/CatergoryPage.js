@@ -26,6 +26,8 @@ const ANDROIDCATERGORY=(DIV,ADVANCE)=>{
         STYLED(GRIDICON,'marginRight','1rem');
         STYLED(SEARCHINPUT,'marginTop','auto');
         STYLED(SEARCHINPUT,'marginBottom','auto');
+        STYLED(SEARCHINPUT,'marginLeft','auto');
+        STYLED(SEARCHINPUT,'marginRight','2rem');
         STYLED(SEARCHINPUT,'width','70%');
         
 
