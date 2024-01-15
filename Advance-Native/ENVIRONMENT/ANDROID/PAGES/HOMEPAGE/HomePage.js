@@ -42,6 +42,7 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
     STYLED(APPNAME,'marginTop','auto');
     STYLED(APPNAME,'marginBottom','auto');
     STYLED(APPNAME,'fontSize','20px');
+    STYLED(APPNAME,'color','white');
     
 
   
