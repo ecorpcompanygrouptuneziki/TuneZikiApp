@@ -1,4 +1,5 @@
 import { ANDROIDCATERGORY } from "../CATERGORYPAGE/CatergoryPage.js";
+import { ANDROIDLKEDPAGE } from "../LIKEDPAGE/LikedPage.js";
 import { ANDROIDMUSICPAGES } from "../MUSICPAGE/MusicPage.js";
 
 const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
@@ -83,6 +84,12 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
     MUSICICON.addEventListener('click',()=>{
 
         ANDROIDMUSICPAGES(DIV,ADVANCE);        
+
+    })
+
+    HEARTICON.addEventListener('click',()=>{
+
+        ANDROIDLKEDPAGE(DIV,ADVANCE);        
 
     })
 
