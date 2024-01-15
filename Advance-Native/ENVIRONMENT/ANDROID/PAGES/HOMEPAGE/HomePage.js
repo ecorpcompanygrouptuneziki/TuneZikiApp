@@ -1,4 +1,5 @@
 import { ANDROIDCATERGORY } from "../CATERGORYPAGE/CatergoryPage.js";
+import { ANDROIDMUSICPAGES } from "../MUSICPAGE/MusicPage.js";
 
 const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
 
@@ -26,9 +27,6 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
 
     DISPLAY(APPNAME,'Tune Ziki');
 
-    
-
-
     //STYLES ZONE
     STYLED(DIV,'background',ADVANCE.COLOURS.TEAL);
     STYLED(HOMEICON,'marginLeft','0.2rem');
@@ -44,8 +42,6 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
     STYLED(APPNAME,'fontSize','20px');
     STYLED(APPNAME,'color','white');
     
-
-  
     //LAYOUT ZONE
     ADD(DIV,HORIZONTALSCROLLINGDIV);
 
@@ -74,6 +70,12 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
     GRIDICON.addEventListener('click',()=>{
 
         ANDROIDCATERGORY(DIV,ADVANCE);        
+
+    })
+    
+    MUSICICON.addEventListener('click',()=>{
+
+        ANDROIDMUSICPAGES(DIV,ADVANCE);        
 
     })
 

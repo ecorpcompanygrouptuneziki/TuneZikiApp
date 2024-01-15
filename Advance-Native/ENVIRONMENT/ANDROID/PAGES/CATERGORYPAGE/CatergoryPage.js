@@ -52,7 +52,6 @@ const ANDROIDCATERGORY=(DIV,ADVANCE)=>{
 
             ANDROIDHOMEPAGE(DIV,ADVANCE)
 
-
         })
 
 
