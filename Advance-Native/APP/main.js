@@ -3,7 +3,7 @@ const BODY = document.querySelector('body');
 BODY.style.position='fixed';
 BODY.style.width='100%';
 BODY.style.height='100%';
-BODY.style.background='TEAL';
+BODY.style.background='#010114';
 BODY.style.overflow='hidden';
 BODY.style.padding='0';
 BODY.style.margin='0';
@@ -18,7 +18,7 @@ const DIV = document.querySelector('div');
 DIV.style.position='fixed';
 DIV.style.width='100%';
 DIV.style.height='100%';
-DIV.style.background='#00000080';
+DIV.style.background='transparent';
 DIV.style.overflow='hidden';
 
 //Change It Basing On the Following (Android,Web,Ios,Windows)
