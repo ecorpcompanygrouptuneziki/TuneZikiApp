@@ -6,6 +6,7 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
     const STYLED=ADVANCE.STYLED;
     const CLEAR=ADVANCE.CLEAR;
     const ADD=ADVANCE.ADDPACKAGE;
+    const APPNAME=ADVANCE.LOGINAPPNAME;
     const DISPLAY=ADVANCE.DISPLAYDATA;
     const HEADER=ADVANCE.HEADER;
     const FOOTER=ADVANCE.FOOTER;
@@ -23,7 +24,7 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
 
     CLEAR(HEADER);
 
-    
+    DISPLAY(APPNAME,'Tune Ziki');
 
     
 
@@ -36,6 +37,11 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
     STYLED(NOTIFICATIONICON,'marginRight','1rem');
     STYLED(PROFILEICON,'marginLeft','1rem');
     STYLED(PROFILEICON,'marginRight','1rem');
+    STYLED(APPNAME,'marginLeft','1rem');
+    STYLED(APPNAME,'marginRight','1rem');
+    STYLED(APPNAME,'marginTop','auto');
+    STYLED(APPNAME,'marginBottom','auto');
+    STYLED(APPNAME,'fontSize','20px');
     
 
   
@@ -44,7 +50,7 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
 
     ADD(DIV,HEADER);
 
-    ADD(HEADER,HOMEICON);
+    ADD(HEADER,APPNAME);
 
     ADD(HEADER,NOTIFICATIONICON);
 
