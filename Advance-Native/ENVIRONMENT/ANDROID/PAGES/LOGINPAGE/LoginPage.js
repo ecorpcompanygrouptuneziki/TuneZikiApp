@@ -14,7 +14,6 @@ const ANDROIDLOGINPAGE=(DIV,ADVANCE)=>{
     //STYLE SECTION
     STYLED(APPNAME,'color','teal');
 
-
     CLEAR(DIV);
     
     ADD(DIV,APPNAME);
