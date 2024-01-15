@@ -16,7 +16,7 @@ LOGINUSERNAMEINPUT.style.textAlign = 'left';
 LOGINUSERNAMEINPUT.style.display = 'block';
 LOGINUSERNAMEINPUT.style.borderRadius = '5px';
 LOGINUSERNAMEINPUT.style.color = 'white';
-LOGINUSERNAMEINPUT.style.border = 'none';
+LOGINUSERNAMEINPUT.style.border = '1px solid teal';
 LOGINUSERNAMEINPUT.style.userSelect = 'none';
 LOGINUSERNAMEINPUT.style.outline = 'none';
 

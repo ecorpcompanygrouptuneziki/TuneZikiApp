@@ -16,7 +16,7 @@ SEARCHINPUT.style.textAlign = 'left';
 SEARCHINPUT.style.display = 'block';
 SEARCHINPUT.style.borderRadius = '5px';
 SEARCHINPUT.style.color = 'white';
-SEARCHINPUT.style.border = 'none';
+SEARCHINPUT.style.border = '1px solid teal';
 SEARCHINPUT.style.userSelect = 'none';
 SEARCHINPUT.style.outline = 'none';
 

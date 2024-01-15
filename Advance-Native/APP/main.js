@@ -7,12 +7,12 @@ BODY.style.background='#010114';
 BODY.style.overflow='hidden';
 BODY.style.padding='0';
 BODY.style.margin='0';
-BODY.style.color='grey';
+BODY.style.color='White';
 BODY.style.fontFamily='san-serif';
 BODY.style.fontSize='20px';
 BODY.style.textDecoration='none';
 BODY.style.scrollBehavior='smooth';
-
+//#010114
 const DIV = document.querySelector('div');
 //STYLES
 DIV.style.position='fixed';

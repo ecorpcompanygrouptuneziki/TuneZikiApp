@@ -15,7 +15,7 @@ CREATEPHONENUMBER.style.textAlign='left';
 CREATEPHONENUMBER.style.display='block';
 CREATEPHONENUMBER.style.borderRadius='5px';
 CREATEPHONENUMBER.style.color='white';
-CREATEPHONENUMBER.style.border='none';
+CREATEPHONENUMBER.style.border='1px solid teal';
 CREATEPHONENUMBER.minLength = '10'; 
 CREATEPHONENUMBER.style.outline = 'none';
 

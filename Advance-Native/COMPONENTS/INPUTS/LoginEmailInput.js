@@ -16,7 +16,7 @@ LOGINEMAILINPUT.style.textAlign = 'left';
 LOGINEMAILINPUT.style.display = 'block';
 LOGINEMAILINPUT.style.borderRadius = '5px';
 LOGINEMAILINPUT.style.color = 'white';
-LOGINEMAILINPUT.style.border = 'none';
+LOGINEMAILINPUT.style.border = '1px solid teal';
 LOGINEMAILINPUT.style.userSelect = 'none';
 LOGINEMAILINPUT.style.outline = 'none';
 

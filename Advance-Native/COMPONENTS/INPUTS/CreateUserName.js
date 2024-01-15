@@ -15,7 +15,7 @@ CREATEACCOUNTUSERNAMEINPUT.style.textAlign='left';
 CREATEACCOUNTUSERNAMEINPUT.style.display='block';
 CREATEACCOUNTUSERNAMEINPUT.style.borderRadius='5px';
 CREATEACCOUNTUSERNAMEINPUT.style.color='white';
-CREATEACCOUNTUSERNAMEINPUT.style.border='none';
+CREATEACCOUNTUSERNAMEINPUT.style.border='1px solid teal';
 CREATEACCOUNTUSERNAMEINPUT.style.outline = 'none';
 
 

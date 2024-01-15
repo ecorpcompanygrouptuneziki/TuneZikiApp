@@ -15,7 +15,7 @@ CREATEEMAILINPUT.style.textAlign='left';
 CREATEEMAILINPUT.style.display='block';
 CREATEEMAILINPUT.style.borderRadius='5px';
 CREATEEMAILINPUT.style.color='white';
-CREATEEMAILINPUT.style.border='none';
+CREATEEMAILINPUT.style.border='1px solid teal';
 CREATEEMAILINPUT.style.outline = 'none';
 
 

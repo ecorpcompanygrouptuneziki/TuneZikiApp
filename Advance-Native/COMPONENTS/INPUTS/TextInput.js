@@ -16,7 +16,7 @@ TEXTINPUT.style.textAlign = 'left';
 TEXTINPUT.style.display = 'block';
 TEXTINPUT.style.borderRadius = '5px';
 TEXTINPUT.style.color = 'white';
-TEXTINPUT.style.border = 'none';
+TEXTINPUT.style.border = '1px solid teal';
 TEXTINPUT.style.userSelect = 'none';
 TEXTINPUT.style.outline = 'none';
 

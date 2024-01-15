@@ -15,7 +15,7 @@ CREATELOCATIONINPUT.style.textAlign='left';
 CREATELOCATIONINPUT.style.display='block';
 CREATELOCATIONINPUT.style.borderRadius='5px';
 CREATELOCATIONINPUT.style.color='white';
-CREATELOCATIONINPUT.style.border='none';
+CREATELOCATIONINPUT.style.border='1px solid teal';
 CREATELOCATIONINPUT.style.outline = 'none';
 
 

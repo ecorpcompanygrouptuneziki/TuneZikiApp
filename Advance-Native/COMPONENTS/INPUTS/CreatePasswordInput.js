@@ -15,7 +15,7 @@ CREATEPASSWORDINPUT.style.textAlign='left';
 CREATEPASSWORDINPUT.style.display='block';
 CREATEPASSWORDINPUT.style.borderRadius='5px';
 CREATEPASSWORDINPUT.style.color='white';
-CREATEPASSWORDINPUT.style.border='none';
+CREATEPASSWORDINPUT.style.border='1px solid teal';
 CREATEPASSWORDINPUT.style.outline = 'none';
 
 

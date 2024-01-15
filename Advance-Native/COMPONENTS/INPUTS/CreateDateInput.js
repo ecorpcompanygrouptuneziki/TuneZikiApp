@@ -13,7 +13,7 @@ CREATEINPUTDATE.style.left='2%';
 CREATEINPUTDATE.style.textAlign='left';
 CREATEINPUTDATE.style.display='block';
 CREATEINPUTDATE.style.borderRadius='5px';
-CREATEINPUTDATE.style.color='white';
+CREATEINPUTDATE.style.color='1px solid teal';
 CREATEINPUTDATE.style.border='none';
 CREATEINPUTDATE.style.outline = 'none';
 //ADD EVENT HANDLER TO CREATE DATE 
