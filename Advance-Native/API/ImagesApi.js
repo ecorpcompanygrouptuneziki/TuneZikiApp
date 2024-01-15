@@ -1,0 +1,3 @@
+const IMAGESAPI=`../ASSETS/IMAGES/`;
+
+export{IMAGESAPI};

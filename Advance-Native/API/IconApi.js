@@ -1,0 +1,3 @@
+const ICONSAPI=`../ASSETS/ICONS/`;
+
+export{ICONSAPI};
