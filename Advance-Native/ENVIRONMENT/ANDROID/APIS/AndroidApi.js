@@ -1,0 +1,6 @@
+const ANDROIDLOGINAPI=`https://script.googleusercontent.com/macros/echo?user_content_key=kUg8mZrIsGSj87podH6RATyy362cAxS7-0uQ3uNzLOGqHoHg6ZgZ6KoKcbHA_-oYT3VmCc4xw0DaZ7LNC74pRb4aWXx4351pm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnKA1v-EIJtEwCE8gbqgQbj6keROuCHuTNbqymVmbyzwhp3fNd59geIx8LTzfcLCd4Ob0GQLI9TsITdlDVVbXwF7XZNmrGC_BWtz9Jw9Md8uu&lib=MH9UzempnPpp__Q4gCJTV5L0wVN3VIjiR`;
+
+
+
+
+export{ANDROIDLOGINAPI}
