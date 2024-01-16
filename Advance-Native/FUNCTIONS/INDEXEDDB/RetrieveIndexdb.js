@@ -2,53 +2,49 @@ const RETRIEVEINDEXEDDB = (DATABASE, DATABASETABLE, key) => {
     return new Promise((resolve, reject) => {
         const dbName = DATABASE;
 
-        const openRequest = indexedDB.open(dbName, 1);
-
-        openRequest.onupgradeneeded = (event) => {
-            const db = event.target.result;
-
-            // Create object store if it doesn't exist
-            if (!db.objectStoreNames.contains(DATABASETABLE)) {
-                const objectStore = db.createObjectStore(DATABASETABLE, { keyPath: 'id', autoIncrement: true });
-
-                // Put demo data into the object store
-                const demoData = [
-                    { data: 'Demo 1' },
-                    { data: 'Demo 2' },
-                    // Add more demo data as needed
-                ];
-
-                demoData.forEach((item) => {
-                    objectStore.add(item);
-                });
-            }
-        };
+        const openRequest = indexedDB.open(dbName);
 
         openRequest.onsuccess = (event) => {
             const db = event.target.result;
 
-            const transaction = db.transaction([DATABASETABLE], 'readonly');
+            try {
+                // Check if the object store exists before opening a transaction
+                if (db.objectStoreNames.contains(DATABASETABLE)) {
+                    const transaction = db.transaction(DATABASETABLE, 'readonly');
+                    const objectStore = transaction.objectStore(DATABASETABLE);
 
-            const objectStore = transaction.objectStore(DATABASETABLE);
+                    const getRequest = objectStore.get(key);
 
-            const getRequest = objectStore.get(key);
+                    getRequest.onsuccess = (event) => {
+                        const result = event.target.result;
+                        resolve(result);
+                    };
 
-            getRequest.onsuccess = (event) => {
-                const result = event.target.result;
-                resolve(result);
-            };
+                    getRequest.onerror = (event) => {
+                        reject(event.target.error);
+                    };
 
-            getRequest.onerror = (event) => {
-                reject(event.target.error);
-            };
-
-            transaction.oncomplete = () => {
-                db.close();
-            };
+                    transaction.oncomplete = () => {
+                        db.close();
+                    };
+                } else {
+                    reject(new Error(`Object store '${DATABASETABLE}' not found in the database.`));
+                }
+            } catch (error) {
+                reject(error);
+            }
         };
 
         openRequest.onerror = (event) => {
             reject(event.target.error);
+        };
+
+        openRequest.onblocked = (event) => {
+            reject(new Error("Database access is blocked. Please close other tabs using the application."));
+        };
+
+        openRequest.onupgradeneeded = (event) => {
+            // Handle database upgrade if needed
         };
     });
 };
