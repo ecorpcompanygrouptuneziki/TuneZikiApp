@@ -6,7 +6,7 @@ const APPSTART=(DIV,ADVANCE)=>{
  
 if (localStorage.getItem('Device')==='Android') {
     
-    ANDROIDHOMEPAGE(DIV,ADVANCE);
+    ANDROIDLOGINPAGE(DIV,ADVANCE);
 
 } else {
     

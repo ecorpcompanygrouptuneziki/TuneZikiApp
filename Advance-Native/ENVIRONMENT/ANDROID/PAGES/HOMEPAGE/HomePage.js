@@ -31,7 +31,7 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
     DISPLAY(APPNAME,'Tune Ziki');
 
     //STYLES ZONE
-    STYLED(DIV,'background',ADVANCE.COLOURS.TEAL);
+    STYLED(DIV,'background','#010114');
     STYLED(HOMEICON,'marginLeft','0.2rem');
     STYLED(HOMEICON,'marginRight','1rem');
     STYLED(NOTIFICATIONICON,'marginLeft','auto');
