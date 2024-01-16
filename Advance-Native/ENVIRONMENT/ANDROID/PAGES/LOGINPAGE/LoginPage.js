@@ -1,3 +1,4 @@
+import { ANDROIDLOGINAPI } from "../../APIS/AndroidApi.js";
 import { ANDROIDCREATEACCOUNTPAGE } from "../CREATEACCOUNT/CreateAccount.js";
 import { ANDROIDHOMEPAGE } from "../HOMEPAGE/HomePage.js";
 
@@ -16,6 +17,7 @@ const ANDROIDLOGINPAGE=(DIV,ADVANCE)=>{
     const GET=ADVANCE.GETPACKAGE;
     const MESSAGEUSER =ADVANCE.MESSAGEUSER;
     const VIBRATE=ADVANCE.VIBRATE;
+    const LOADINGICON=ADVANCE.LOADINGICON;
 
 
     CLEAR(DIV);
@@ -41,6 +43,27 @@ const ANDROIDLOGINPAGE=(DIV,ADVANCE)=>{
 
         if (EMAILINPUT.value && PASSWORDINPUT.value) {
             
+            CLEAR(LOGINBUTTON);
+
+            ADD(LOGINBUTTON,LOADINGICON)
+
+            GET(ANDROIDLOGINAPI,'no-cors')
+
+            .then((result) => {
+                
+                console.log(result);
+
+            }).catch((err) => {
+                
+                VIBRATE(200);
+
+                MESSAGEUSER(DIV,'Error Occurred Try Again Later','2000'); 
+
+                CLEAR(LOGINBUTTON);
+
+                DISPLAY(LOGINBUTTON,'LogIn');
+
+            });
 
 
         } else {
