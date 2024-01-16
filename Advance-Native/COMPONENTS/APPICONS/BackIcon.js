@@ -7,8 +7,8 @@ const BACKICON=document.createElement('img');
 BACKICON.src=ICONSAPI+'TEALICONS/backarrow.png';
 //STYLES
 BACKICON.style.position='relative';
-BACKICON.style.width='25px';
-BACKICON.style.height='25px';
+BACKICON.style.width='30px';
+BACKICON.style.height='30px';
 BACKICON.style.padding='0.5rem';
 BACKICON.style.position='relative';
 BACKICON.style.marginTop='auto';

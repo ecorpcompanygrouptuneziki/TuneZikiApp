@@ -4,7 +4,7 @@ const ICONSAPI=ADVANCE.ICONSAPI;
 
 const PLAYICON=document.createElement('img');
 //SOURCE 
-PLAYICON.src=ICONSAPI+'play.png';
+PLAYICON.src=ICONSAPI+'TEALICONS/play.png';
 //STYLES
 PLAYICON.style.position='relative';
 PLAYICON.style.width='25px';

@@ -1,5 +1,6 @@
 import { IMAGESAPI } from "../../../../API/ImagesApi.js";
 import { ANDROIDMUSICFEEDAPI } from "../../APIS/AndroidApi.js";
+import { ANDROIDHOMEPAGE } from "./HomePage.js";
 
 const ANDROIDMUSICFEED=(DIV,ADVANCE,STORIESDIV)=>{
 
@@ -65,7 +66,59 @@ const ANDROIDMUSICFEED=(DIV,ADVANCE,STORIESDIV)=>{
 
             ADD(STORIESDIVHOLDER,LOGINMESSAGE);
 
-            console.log(element)
+            STORIESDIVHOLDER.addEventListener('click',()=>{
+
+                CLEAR(DIV);
+
+                const ROUNDFOOTER=ADVANCE.ROUNDFOOTER;
+
+                const BACKICON=ADVANCE.BACKICON;
+
+                const PLAYICON=ADVANCE.PLAYICON;
+
+                const APPNAME=ADVANCE.LOGINAPPNAME;
+
+                const DISPLAY=ADVANCE.DISPLAYDATA;
+
+                ADD(DIV,ROUNDFOOTER);
+
+                ADD(ROUNDFOOTER,BACKICON);
+
+                ADD(ROUNDFOOTER,PLAYICON);
+
+                DISPLAY(APPNAME,element.UserName);
+
+                ADD(ROUNDFOOTER,APPNAME);
+
+                const POSTEDRELEASE=document.createElement('img');
+                POSTEDRELEASE.src=`${IMAGESAPI}tune ziki logo 512.jpg`;
+                //STYLES
+                POSTEDRELEASE.style.position='absolute';
+                POSTEDRELEASE.style.width='95%';
+                POSTEDRELEASE.style.height='85%';
+                POSTEDRELEASE.style.background='transparent';
+                POSTEDRELEASE.style.top='2%';
+                POSTEDRELEASE.style.bottom='0';
+                POSTEDRELEASE.style.left='2%';
+                POSTEDRELEASE.style.borderRadius='20px';
+                POSTEDRELEASE.style.marginRight='auto';
+                POSTEDRELEASE.style.display='block';
+
+                ADD(DIV,POSTEDRELEASE);
+
+
+
+
+                   //FUNCTIONS
+                BACKICON.addEventListener('click',()=>{
+
+                    ANDROIDHOMEPAGE(DIV,ADVANCE);
+
+                })
+
+
+            })
+            
             
         });
 
