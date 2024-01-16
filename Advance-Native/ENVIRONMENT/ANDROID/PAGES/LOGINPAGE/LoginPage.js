@@ -20,6 +20,7 @@ const ANDROIDLOGINPAGE = (DIV, ADVANCE) => {
     const LOADINGICON = ADVANCE.LOADINGICON;
     const CHECKUSERDETAILS = ADVANCE.CHECKUSERDETAILS;
     const STOREUSER=ADVANCE.STOREINDEXEDDB;
+    const STORE=ADVANCE.ADDSTORAGE;
 
     CLEAR(DIV);
 
@@ -51,7 +52,9 @@ const ANDROIDLOGINPAGE = (DIV, ADVANCE) => {
 
                     const LOGGINEDINUSER = (userData) => {
                         
-                        STOREUSER('User','MyDetails',{id:'01',"Details":userData})
+                        STOREUSER('User','MyDetails',{id:'01',"Details":userData});
+
+                        STORE('local','User',userData.UserEmail);
 
                         ANDROIDHOMEPAGE(DIV,ADVANCE);
 

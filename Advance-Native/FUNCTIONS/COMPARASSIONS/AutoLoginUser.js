@@ -1,12 +1,10 @@
-import { MESSAGEUSER } from "../../CONNECTION/Connection.js";
-
+import { MESSAGEUSER} from "../../CONNECTION/Connection.js";
 
 const AUTOLOGINUSER = (DIV,DATA,ELEMENTONE, ELEMENTONEINPUT,ACTION,ACTIONONE,MESSAGE) => {
 
     const MyData = DATA.find(user => user[ELEMENTONE] === ELEMENTONEINPUT);
 
     if (MyData) {
-
 
         ACTION(MyData);
 
@@ -16,7 +14,7 @@ const AUTOLOGINUSER = (DIV,DATA,ELEMENTONE, ELEMENTONEINPUT,ACTION,ACTIONONE,MES
         
         ACTIONONE();
 
-        MESSAGEUSER(DIV,MESSAGE,'2000')
+        MESSAGEUSER(DIV,MESSAGE,'2000');
         
     }
 

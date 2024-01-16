@@ -6,27 +6,21 @@ const ANDROIDAUTOLOGIN=(DIV,ADVANCE)=>{
 
     const GET=ADVANCE.GETPACKAGE;
 
-    const GETSTORED=ADVANCE.RETRIEVEINDEXEDDB;
-
     const AUTOLOGIN=ADVANCE.AUTOLOGINUSER;
 
-    GETSTORED('User','MyDetails','01')
+    const VIBRATE = ADVANCE.VIBRATE;
 
-    .then((data) => {
+    GET(ANDROIDLOGINAPI,'cors')
 
-        GET(ANDROIDLOGINAPI,'cors')
+    .then((result) => {
 
-        .then((result) => {
-    
-            AUTOLOGIN(DIV,result,'UserEmail',data.Details.UserEmail,NAV,FALLBACK,'Something Went Wrong');
-            
-        }).catch((err) => {
-            
-            ANDROIDLOGINPAGE(DIV,ADVANCE)
-    
-        });
+        const USER=localStorage.getItem('User');
 
+        AUTOLOGIN(DIV,result,'UserEmail',USER,NAV,FALLBACK,'Something Went Wrong');
+        
     }).catch((err) => {
+        
+        VIBRATE(200);
 
         ANDROIDLOGINPAGE(DIV,ADVANCE);
 
@@ -34,11 +28,15 @@ const ANDROIDAUTOLOGIN=(DIV,ADVANCE)=>{
 
     const NAV=(userData)=>{
 
+        VIBRATE(200);
+
         ANDROIDHOMEPAGE(DIV,ADVANCE);
 
     }
 
     const FALLBACK=()=>{
+
+        VIBRATE(200);
 
         ANDROIDLOGINPAGE(DIV,ADVANCE);
 
