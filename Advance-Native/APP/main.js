@@ -18,7 +18,7 @@ const DIV = document.querySelector('div');
 DIV.style.position='fixed';
 DIV.style.width='100%';
 DIV.style.height='100%';
-DIV.style.background='transparent';
+DIV.style.background='';
 DIV.style.overflow='hidden';
 
 //Change It Basing On the Following (Android,Web,Ios,Windows)
