@@ -1,12 +1,11 @@
-import { ANDROIDHOMEPAGE } from "../ENVIRONMENT/ANDROID/PAGES/HOMEPAGE/HomePage.js"
-import { ANDROIDLOGINPAGE } from "../ENVIRONMENT/ANDROID/PAGES/LOGINPAGE/LoginPage.js";
+import { ANDROIDAUTOLOGIN } from "../ENVIRONMENT/ANDROID/PAGES/AUTOLOGIN/AutoLoginUser.js";
 
 const APPSTART=(DIV,ADVANCE)=>{
 
  
 if (localStorage.getItem('Device')==='Android') {
     
-    ANDROIDLOGINPAGE(DIV,ADVANCE);
+    ANDROIDAUTOLOGIN(DIV,ADVANCE);
 
 } else {
     
