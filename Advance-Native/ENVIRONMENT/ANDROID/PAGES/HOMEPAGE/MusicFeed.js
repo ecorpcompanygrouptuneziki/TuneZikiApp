@@ -5,6 +5,8 @@ import { ANDROIDHOMEPAGE } from "./HomePage.js";
 const ANDROIDMUSICFEED=(DIV,ADVANCE,STORIESDIV)=>{
 
     const CLEAR=ADVANCE.CLEAR;
+
+    const STYLED=ADVANCE.STYLED;
     
     CLEAR(STORIESDIV);
 
@@ -76,19 +78,7 @@ const ANDROIDMUSICFEED=(DIV,ADVANCE,STORIESDIV)=>{
 
                 const PLAYICON=ADVANCE.PLAYICON;
 
-                const APPNAME=ADVANCE.LOGINAPPNAME;
-
-                const DISPLAY=ADVANCE.DISPLAYDATA;
-
-                ADD(DIV,ROUNDFOOTER);
-
-                ADD(ROUNDFOOTER,BACKICON);
-
-                ADD(ROUNDFOOTER,PLAYICON);
-
-                DISPLAY(APPNAME,element.UserName);
-
-                ADD(ROUNDFOOTER,APPNAME);
+                const USERICON=ADVANCE.PROFILEICON;
 
                 const POSTEDRELEASE=document.createElement('img');
                 POSTEDRELEASE.src=`${IMAGESAPI}tune ziki logo 512.jpg`;
@@ -104,10 +94,18 @@ const ANDROIDMUSICFEED=(DIV,ADVANCE,STORIESDIV)=>{
                 POSTEDRELEASE.style.marginRight='auto';
                 POSTEDRELEASE.style.display='block';
 
+                STYLED(USERICON,'marginLeft','auto');
+                STYLED(USERICON,'marginRight','auto');
+
                 ADD(DIV,POSTEDRELEASE);
 
+                ADD(DIV,ROUNDFOOTER);
 
+                ADD(ROUNDFOOTER,BACKICON);
 
+                ADD(ROUNDFOOTER,PLAYICON);
+
+                ADD(ROUNDFOOTER,USERICON);
 
                    //FUNCTIONS
                 BACKICON.addEventListener('click',()=>{
