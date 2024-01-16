@@ -1,4 +1,3 @@
-import { ADVANCE } from "../../API/AdvanceApi.js";
 import { MESSAGEUSER } from "../../CONNECTION/Connection.js";
 
 
@@ -8,15 +7,12 @@ const AUTOLOGINUSER = (DIV,DATA,ELEMENTONE, ELEMENTONEINPUT,ACTION,ACTIONONE,MES
 
     if (MyData) {
 
-        ADVANCE.VIBRATE(200);
 
         ACTION(MyData);
 
         return MyData; // Return the user data
 
     } else {
-
-        ADVANCE.VIBRATE(200);
         
         ACTIONONE();
 
