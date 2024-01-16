@@ -3,7 +3,7 @@ import { ADVANCE } from "../../API/AdvanceApi.js";
 const ICONSAPI=ADVANCE.ICONSAPI;
 
 const MUSICICON=document.createElement('img');
-MUSICICON.src=`${ICONSAPI}music.png`;
+MUSICICON.src=`${ICONSAPI}TEALICONS/musiclist.png`;
 //STYLES
 MUSICICON.style.position='relative';
 MUSICICON.style.width='25px';

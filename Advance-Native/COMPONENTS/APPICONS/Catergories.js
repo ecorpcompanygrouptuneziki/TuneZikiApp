@@ -3,7 +3,7 @@ import { ADVANCE } from "../../API/AdvanceApi.js";
 const ICONSAPI=ADVANCE.ICONSAPI;
 
 const CATERGORYICON=document.createElement('img');
-CATERGORYICON.src=`${ICONSAPI}list.png`;
+CATERGORYICON.src=`${ICONSAPI}TEALICONS/musiclist.png`;
 //STYLES
 CATERGORYICON.style.position='relative';
 CATERGORYICON.style.width='25px';

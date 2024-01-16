@@ -3,7 +3,7 @@ import { ADVANCE } from "../../API/AdvanceApi.js";
 const ICONSAPI=ADVANCE.ICONSAPI;
 
 const GRIDICON=document.createElement('img');
-GRIDICON.src=`${ICONSAPI}grid.png`;
+GRIDICON.src=`${ICONSAPI}TEALICONS/grid.png`;
 //STYLES
 GRIDICON.style.position='relative';
 GRIDICON.style.width='25px';

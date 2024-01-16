@@ -4,7 +4,7 @@ const ICONSAPI=ADVANCE.ICONSAPI;
 
 const SETTINGSICON=document.createElement('img');
 //SOURCE 
-SETTINGSICON.src=ICONSAPI+'setting.png';
+SETTINGSICON.src=ICONSAPI+'TEALICONS/settings.png';
 //STYLES
 SETTINGSICON.style.position='relative';
 SETTINGSICON.style.width='25px';

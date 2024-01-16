@@ -4,7 +4,7 @@ const ICONSAPI=ADVANCE.ICONSAPI;
 
 const HEARTICON=document.createElement('img');
 //SOURCE 
-HEARTICON.src=ICONSAPI+'heart.png';
+HEARTICON.src=ICONSAPI+'TEALICONS/heartfull.png';
 //STYLES
 HEARTICON.style.position='relative';
 HEARTICON.style.width='25px';

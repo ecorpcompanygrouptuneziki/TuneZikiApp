@@ -4,7 +4,7 @@ const ICONSAPI=ADVANCE.ICONSAPI;
 
 const NOTIFICATIONICON=document.createElement('img');
 //SOURCE 
-NOTIFICATIONICON.src=ICONSAPI+'notifications.png';
+NOTIFICATIONICON.src=ICONSAPI+'TEALICONS/bell.png';
 //STYLES
 NOTIFICATIONICON.style.position='relative';
 NOTIFICATIONICON.style.width='25px';

@@ -4,7 +4,7 @@ const ICONSAPI=ADVANCE.ICONSAPI;
 
 const USERICON=document.createElement('img');
 //SOURCE 
-USERICON.src=ICONSAPI+'user.png';
+USERICON.src=ICONSAPI+'TEALICONS/user-music.png';
 //STYLES
 USERICON.style.position='relative';
 USERICON.style.width='25px';
