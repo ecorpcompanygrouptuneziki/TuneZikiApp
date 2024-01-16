@@ -16,7 +16,7 @@ const ANDROIDSETTINGSPAGE=(DIV,ADVANCE)=>{
 
     CLEAR(HEADER);
 
-        
+    CLEAR(HORIZONTALSCROLLINGDIV)
         
     //STYLES ZONE
     STYLED(BACKICON,'marginLeft','0.2rem');
