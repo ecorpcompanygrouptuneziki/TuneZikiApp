@@ -1,6 +1,10 @@
+import { ANDROIDARTISTPAGE } from "../ARTISTPAGE/ArtistPage.js";
 import { ANDROIDCATERGORY } from "../CATERGORYPAGE/CatergoryPage.js";
 import { ANDROIDLKEDPAGE } from "../LIKEDPAGE/LikedPage.js";
 import { ANDROIDMUSICPAGES } from "../MUSICPAGE/MusicPage.js";
+import { ANDROIDNOTIFICATIONSPAGE } from "../NOTIFICATIONSPAGE/NotificationsPage.js";
+import { ANDROIDSETTINGSPAGE } from "../SETTINGSPAGE/SettingsPage.js";
+import { ANDROIDUSERPROFILEPAGE } from "../USERPROFILEPAGE/UserProfilePage.js";
 
 const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
 
@@ -92,6 +96,33 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
         ANDROIDLKEDPAGE(DIV,ADVANCE);        
 
     })
+
+    
+    USERICON.addEventListener('click',()=>{
+
+        ANDROIDARTISTPAGE(DIV,ADVANCE);        
+
+    })
+
+    NOTIFICATIONICON.addEventListener('click',()=>{
+
+        ANDROIDNOTIFICATIONSPAGE(DIV,ADVANCE);        
+
+    })
+
+    PROFILEICON.addEventListener('click',()=>{
+
+        ANDROIDUSERPROFILEPAGE(DIV,ADVANCE);        
+
+    })
+
+    SETTINGSICON.addEventListener('click',()=>{
+
+        ANDROIDSETTINGSPAGE(DIV,ADVANCE);        
+
+    })
+
+
 
     
 
