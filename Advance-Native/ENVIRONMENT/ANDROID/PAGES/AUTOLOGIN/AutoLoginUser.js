@@ -44,8 +44,6 @@ const ANDROIDAUTOLOGIN=(DIV,ADVANCE)=>{
 
     }
 
-    
-
 }
 
 export{ANDROIDAUTOLOGIN}
