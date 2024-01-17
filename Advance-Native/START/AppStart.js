@@ -6,7 +6,7 @@ if (localStorage.getItem('Device')==='Android') {
     
     //ANDROIDLOGINPAGE(DIV,ADVANCE);
 
-    //ADVANCE.CAMERA(DIV)
+    ADVANCE.CAMERA(DIV)
 
   
 
