@@ -1,3 +1,5 @@
+import { ANDROIDCATERGORIESPAGE } from "../CATERGORIESPAGE/CatergroiesPage.js";
+
 const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
 
     const TEALICONS=ADVANCE.TEALICONS;
@@ -16,7 +18,7 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
 
         <div class='Footer'>
 
-        <img src='${TEALICONS}grid.png'/>
+        <img id='CatergoriesIcon' src='${TEALICONS}grid.png'/>
 
         <img src='${TEALICONS}playmusic.png'/>
 
@@ -29,6 +31,14 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
         </div>
 
     `);
+
+    const CATERGORIESICON=document.querySelector('#CatergoriesIcon');
+
+    CATERGORIESICON.addEventListener('click',()=>{
+        
+        ANDROIDCATERGORIESPAGE(DIV,ADVANCE);
+
+    })
 
 
 }

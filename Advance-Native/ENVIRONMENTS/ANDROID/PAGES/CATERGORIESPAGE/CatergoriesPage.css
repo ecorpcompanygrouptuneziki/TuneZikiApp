@@ -1,0 +1,14 @@
+.SearchInput{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 1rem;
+    width: 70%;
+}
+
+.TopLeft{
+    width: 30px;
+    height: 30px;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
