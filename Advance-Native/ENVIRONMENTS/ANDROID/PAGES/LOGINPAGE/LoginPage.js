@@ -1,4 +1,5 @@
 import { ANDROIDCREATEACCOUNTPAGE } from "../CREATEACCOUNTPAGE/CreateAccountPage.js";
+import { ANDROIDHOMEPAGE } from "../HOMEPAGE/HomePage.js";
 
 const ANDROIDLOGINPAGE=(DIV,ADVANCE)=>{
 
@@ -14,7 +15,7 @@ const ANDROIDLOGINPAGE=(DIV,ADVANCE)=>{
 
     <br>
     
-    <button>LogIn</button>
+    <button id='LoginUser'>LogIn</button>
 
     <button id='CreateAccount'>Create Account</button>
     
@@ -25,6 +26,14 @@ const ANDROIDLOGINPAGE=(DIV,ADVANCE)=>{
     CREATEACCOUNT.addEventListener('click',()=>{
 
         ANDROIDCREATEACCOUNTPAGE(DIV,ADVANCE);
+
+    })
+
+    const LOGINUSER=document.querySelector('#LoginUser');
+
+    LOGINUSER.addEventListener('click',()=>{
+
+        ANDROIDHOMEPAGE(DIV,ADVANCE);
 
     })
 
