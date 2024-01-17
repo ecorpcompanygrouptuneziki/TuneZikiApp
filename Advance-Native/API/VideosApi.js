@@ -1,3 +1,0 @@
-const VIDEOSAPI=`../ASSETS/VIDEOS/`;
-
-export{VIDEOSAPI};

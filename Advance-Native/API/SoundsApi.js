@@ -1,3 +1,0 @@
-const SOUNDSAPI=`../ASSETS/SOUNDS/`;
-
-export{SOUNDSAPI};
