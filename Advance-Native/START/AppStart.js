@@ -4,12 +4,8 @@ const APPSTART=(DIV,ADVANCE)=>{
 
 if (localStorage.getItem('Device')==='Android') {
     
-    //ANDROIDLOGINPAGE(DIV,ADVANCE);
-
-    ADVANCE.CAMERA(DIV)
-
+    ANDROIDLOGINPAGE(DIV,ADVANCE);
   
-
 } else {
     
     console.log('Web')
