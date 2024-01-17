@@ -2,7 +2,9 @@ import { ANDROIDCATERGORIESPAGE } from "../CATERGORIESPAGE/CatergroiesPage.js";
 import { ANDROIDLOVEDMUSICPAGE } from "../LOVEDMUSICPAGE/LovedMusicPage.js";
 import { ANDROIDMUSICIANPAGE } from "../MUSICIANPAGE/MusicianPage.js";
 import { ANDROIDMUSICPAGE } from "../MUSICPAGE/MusicPage.js";
+import { ANDROIDNOTIFICATIONSPAGE } from "../NOTIFICATIONSPAGE/NotificationsPage.js";
 import { ANDROIDSETTINGSPAGE } from "../SETTINGSPAGE/SettingsPage.js";
+import { ANDROIDUSERACCOUNTPAGE } from "../USERACCOUNTPAGE/UserAccountPage.js";
 
 const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
 
@@ -14,9 +16,9 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
 
         <h1 class='AppName'>Tune Ziki</h1>
 
-        <img  class='MiddleIcon' src='${TEALICONS}bell.png'/>
+        <img id='Notifications'  class='MiddleIcon' src='${TEALICONS}bell.png'/>
 
-        <img class='TopRight' src='${TEALICONS}user.png'/>
+        <img  id='User' class='TopRight' src='${TEALICONS}user.png'/>
         
         </div>
 
@@ -75,6 +77,23 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
         ANDROIDSETTINGSPAGE(DIV,ADVANCE);
 
     })
+
+    const NOTIFICATIONS=document.querySelector('#Notifications');
+
+    NOTIFICATIONS.addEventListener('click',()=>{
+        
+        ANDROIDNOTIFICATIONSPAGE(DIV,ADVANCE);
+
+    })
+
+    const USER=document.querySelector('#User');
+
+    USER.addEventListener('click',()=>{
+        
+        ANDROIDUSERACCOUNTPAGE(DIV,ADVANCE);
+
+    })
+    
 
 
 }
