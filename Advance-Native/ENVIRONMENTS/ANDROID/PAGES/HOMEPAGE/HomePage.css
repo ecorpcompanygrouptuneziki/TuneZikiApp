@@ -31,3 +31,14 @@
     margin-left: 1rem;
     margin-right: 5rem;
 }
+
+.HomeDiv{
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: auto;
+    top: 50px;
+    bottom: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

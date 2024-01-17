@@ -22,6 +22,8 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
         
         </div>
 
+        <div class='HomeDiv'></div>
+
         <div class='Footer'>
 
         <img id='CatergoriesIcon' src='${TEALICONS}grid.png'/>
