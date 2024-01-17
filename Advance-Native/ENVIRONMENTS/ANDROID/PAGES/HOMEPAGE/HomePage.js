@@ -7,6 +7,14 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
         <div class='Footer'>
 
         <img src='${TEALICONS}grid.png'/>
+
+        <img src='${TEALICONS}playmusic.png'/>
+
+        <img src='${TEALICONS}heartfull.png'/>
+
+        <img src='${TEALICONS}user-music.png'/>
+
+        <img src='${TEALICONS}settings.png'/>
         
         </div>
 
