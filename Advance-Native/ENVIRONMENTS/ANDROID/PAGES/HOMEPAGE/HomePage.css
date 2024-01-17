@@ -1,3 +1,11 @@
+.Header{
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    display: inline-flex;
+}
 .Footer{
     position: absolute;
     background: transparent;
@@ -5,4 +13,16 @@
     bottom: 0;
     height: 50px;
     display: inline-flex;
+}
+
+.AppName{
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.TopRight{
+    margin-left: 1rem;
+    margin-right: 2rem;
 }

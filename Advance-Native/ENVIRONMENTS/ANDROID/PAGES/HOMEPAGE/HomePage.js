@@ -4,6 +4,16 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
 
     ADVANCE.DISPLAYDATA(DIV,`
 
+        <div class='Header'>
+
+        <h1 class='AppName'>Tune Ziki</h1>
+
+        <img  class='TopRight' src='${TEALICONS}bell.png'/>
+
+        <img class='TopRight' src='${TEALICONS}user.png'/>
+        
+        </div>
+
         <div class='Footer'>
 
         <img src='${TEALICONS}grid.png'/>
