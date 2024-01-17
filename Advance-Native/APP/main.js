@@ -2,8 +2,6 @@ const BODY=document.querySelector('body');
 
 const DIV=document.querySelector('div');
 
-
-
 setTimeout(() => {
 
     import("../SOURCE/index.js").then((module) => {

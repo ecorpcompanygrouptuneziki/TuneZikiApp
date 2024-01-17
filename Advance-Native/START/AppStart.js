@@ -1,8 +1,10 @@
+import { ANDROIDLOGINPAGE } from "../ENVIRONMENTS/ANDROID/PAGES/LOGINPAGE/LoginPage.js"
+
 const APPSTART=(DIV,ADVANCE)=>{
 
 if (localStorage.getItem('Device')==='Android') {
     
-    console.log('Android')
+    ANDROIDLOGINPAGE(DIV,ADVANCE)
 
 } else {
     

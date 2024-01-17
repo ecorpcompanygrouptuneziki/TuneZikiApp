@@ -4,7 +4,7 @@ button{
     min-height: 32px;
     height: 50px;
     max-height: 50px;
-    background: #00000080;
+    background: teal;
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
     left: 2%;

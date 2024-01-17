@@ -3,7 +3,7 @@ import { APPSTART } from "../START/AppStart.js";
 
 const CONNECTION=(DIV)=>{
 
-    ADVANCE.APPNAME('Advance');
+    ADVANCE.APPNAME('Tune Ziki');
 
     ADVANCE.APPLOGO('../ASSETS/IMAGES/logo.png');
 
