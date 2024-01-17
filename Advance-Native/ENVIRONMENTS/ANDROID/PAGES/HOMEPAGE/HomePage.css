@@ -23,6 +23,11 @@
 }
 
 .TopRight{
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.MiddleIcon{
     margin-left: 1rem;
-    margin-right: 2rem;
+    margin-right: 5rem;
 }
