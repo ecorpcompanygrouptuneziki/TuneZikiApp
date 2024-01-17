@@ -1,8 +1,1 @@
 @import url('../COMPONENTS/Connection.css');
-
-.Show{
-    position: absolute;
-    background: red;
-    width: 100%;
-    top: 50%;
-}
