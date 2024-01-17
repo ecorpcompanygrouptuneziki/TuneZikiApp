@@ -5,13 +5,9 @@ const ANDROIDAUTOLOGINPAGE=(DIV,ADVANCE)=>{
 
     if (localStorage.getItem('User')) {
 
-        ADVANCE.VIBRATE(200);
-
         ANDROIDHOMEPAGE(DIV,ADVANCE);
 
     } else {
-
-        ADVANCE.VIBRATE(200);
         
         ANDROIDLOGINPAGE(DIV,ADVANCE);
 
