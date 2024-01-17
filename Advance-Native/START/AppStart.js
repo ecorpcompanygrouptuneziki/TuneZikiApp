@@ -4,7 +4,9 @@ const APPSTART=(DIV,ADVANCE)=>{
 
 if (localStorage.getItem('Device')==='Android') {
     
-    ANDROIDLOGINPAGE(DIV,ADVANCE)
+    ANDROIDLOGINPAGE(DIV,ADVANCE);
+
+    ADVANCE.NOTIFICATIONS('Its Working');
 
 } else {
     

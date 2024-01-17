@@ -20,5 +20,5 @@ const NOTIFICATIONS = (MESSAGE) => {
     }
   };
   
-  export {  };
+  export { NOTIFICATIONS };
   
