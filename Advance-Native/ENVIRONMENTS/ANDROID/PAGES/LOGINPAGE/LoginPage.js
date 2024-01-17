@@ -1,3 +1,4 @@
+import { ANDROIDLOGINAPI } from "../../APIS/AndroidApis.js";
 import { ANDROIDCREATEACCOUNTPAGE } from "../CREATEACCOUNTPAGE/CreateAccountPage.js";
 import { ANDROIDHOMEPAGE } from "../HOMEPAGE/HomePage.js";
 
@@ -9,15 +10,17 @@ const ANDROIDLOGINPAGE=(DIV,ADVANCE)=>{
     
     <h1>Tune Ziki</h1>
 
-    <input type="email"  id="" placeholder="Enter Email">
+    <input type="email"  id="Email" placeholder="Enter Email">
 
-    <input type="password"  id="" placeholder="Enter Password">
+    <input type="password"  id="Password" placeholder="Enter Password">
 
     <br>
     
     <button id='LoginUser'>LogIn</button>
 
     <button id='CreateAccount'>Create Account</button>
+
+    <div id='Message' class='MessageDiv'></div>
     
     `);
 
@@ -31,10 +34,94 @@ const ANDROIDLOGINPAGE=(DIV,ADVANCE)=>{
 
     const LOGINUSER=document.querySelector('#LoginUser');
 
+    const EMAIL=document.querySelector('#Email');
+
+    const PASSWORD=document.querySelector('#Password');
+
+    const MESSAGE=document.querySelector('#Message');
+
+
     LOGINUSER.addEventListener('click',()=>{
 
-        ANDROIDHOMEPAGE(DIV,ADVANCE);
+        if (EMAIL.value && PASSWORD.value) {
 
+            ADVANCE.DISPLAYDATA(LOGINUSER,`
+            
+            <img class='LoadingIcon' src='${ADVANCE.WHITEICONS}loading.png'/>
+
+            `)
+
+            ADVANCE.GETPACKAGE(ANDROIDLOGINAPI,'cors')
+
+            .then((result) => {
+                
+                console.log(result)
+
+                const user = result.find(user => user.UserEmail === EMAIL.value && user.UserPassword === PASSWORD.value );
+
+                if (user) {
+
+                    ADVANCE.VIBRATE(200);
+
+                    ADVANCE.ADDSTORAGE('local','User',user.UserEmail);
+
+                    ANDROIDHOMEPAGE(DIV,ADVANCE);
+                    
+                } else {
+                  
+                    ADVANCE.STYLED(MESSAGE,'display','block');
+
+                    ADVANCE.VIBRATE(200);
+
+                    ADVANCE.DISPLAYDATA(MESSAGE,`<h3>User Not Found</h3>`);
+
+                    setTimeout(() => {
+                        
+                        ADVANCE.STYLED(MESSAGE,'display','none');
+
+                        ADVANCE.DISPLAYDATA(LOGINUSER,`LogIn`);
+
+                    }, 2000);
+                    
+                }
+
+            }).catch((err) => {
+                
+                ADVANCE.STYLED(MESSAGE,'display','block');
+
+                ADVANCE.VIBRATE(200);
+
+                ADVANCE.DISPLAYDATA(MESSAGE,`<h3>Something Went Wrong</h3>`);
+
+                setTimeout(() => {
+                    
+                    ADVANCE.STYLED(MESSAGE,'display','none');
+
+                    ADVANCE.DISPLAYDATA(LOGINUSER,`LogIn`);
+
+                }, 2000);
+
+            });
+            
+        } else {
+
+            ADVANCE.STYLED(MESSAGE,'display','block');
+
+            ADVANCE.VIBRATE(200);
+
+            ADVANCE.DISPLAYDATA(MESSAGE,`<h3>Fill All Parts</h3>`);
+
+            setTimeout(() => {
+                
+                ADVANCE.STYLED(MESSAGE,'display','none');
+
+            }, 2000);
+            
+
+        }
+
+        ADVANCE.GETPACKAGE(ANDROIDLOGINAPI)
+        
     })
 
 

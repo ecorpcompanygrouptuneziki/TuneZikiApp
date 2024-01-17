@@ -7,3 +7,16 @@ img{
     margin-right: auto;
     margin-left: auto;
 }
+
+.LoadingIcon {
+    position: relative;
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */ 
+    border-radius: 50%;
+    animation: spin 1s linear infinite reverse; /* Note the addition of 'reverse' to make it spin in the opposite direction */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); } /* Negative value to spin in the opposite direction */
+}

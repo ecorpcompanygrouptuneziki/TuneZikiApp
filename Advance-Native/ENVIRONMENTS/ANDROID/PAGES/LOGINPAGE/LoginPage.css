@@ -1,0 +1,11 @@
+.MessageDiv{
+    position: absolute;
+    width: 95%;
+    left: 2%;
+    border-radius: 10px;
+    bottom: 0;
+    margin-bottom: 2rem;
+    background: #00000080;
+    height: 50px;
+    display: none;
+}
