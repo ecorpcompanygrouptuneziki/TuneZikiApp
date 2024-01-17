@@ -42,3 +42,13 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
+
+.StoriesDiv{
+    position: relative;
+    background: #00000080;
+    width: 100%;
+    height: 30%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: inline-flex;
+}

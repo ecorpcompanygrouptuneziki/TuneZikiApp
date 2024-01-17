@@ -5,6 +5,7 @@ import { ANDROIDMUSICPAGE } from "../MUSICPAGE/MusicPage.js";
 import { ANDROIDNOTIFICATIONSPAGE } from "../NOTIFICATIONSPAGE/NotificationsPage.js";
 import { ANDROIDSETTINGSPAGE } from "../SETTINGSPAGE/SettingsPage.js";
 import { ANDROIDUSERACCOUNTPAGE } from "../USERACCOUNTPAGE/UserAccountPage.js";
+import { ANDROIDMUSICFEEDFETCH } from "./FetchMusicStories.js";
 
 const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
 
@@ -22,7 +23,11 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
         
         </div>
 
-        <div class='HomeDiv'></div>
+        <div class='HomeDiv'>
+
+            <div class='StoriesDiv'></div>
+        
+        </div>
 
         <div class='Footer'>
 
@@ -96,7 +101,7 @@ const ANDROIDHOMEPAGE=(DIV,ADVANCE)=>{
 
     })
     
-
+    ANDROIDMUSICFEEDFETCH(DIV,ADVANCE);
 
 }
 
