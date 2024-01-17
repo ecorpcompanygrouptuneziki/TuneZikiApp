@@ -1,3 +1,3 @@
-const SOUNDSAPI=`../ASSETS/SOUNDS/`;
+const SOUNDSAPI=`https://ecorpcompanygrouptuneziki.github.io/TuneZikiApp/Advance-Native/ASSETS/SOUNDS/`;
 
 export{SOUNDSAPI};
