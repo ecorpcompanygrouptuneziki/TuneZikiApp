@@ -36,6 +36,13 @@ const ANDROIDMUSICFEEDFETCH=(DIV,ADVANCE)=>{
             RELEASEDETAILSHOLDERDIV.classList.add('RELEASEDETAILSHOLDERDIV');
 
             ADD(RELEASEHOLDERDIV,RELEASEDETAILSHOLDERDIV);
+
+            //RELEASESRTISTS NAME
+            const RELEASEARTISTNAME=document.createElement('h1');
+            RELEASEARTISTNAME.classList.add('RELEASEARTISTNAME');
+            ADVANCE.DISPLAYDATA(RELEASEARTISTNAME,element.UserName);
+
+            ADD(RELEASEDETAILSHOLDERDIV,RELEASEARTISTNAME);
             
             
             console.log(element)
