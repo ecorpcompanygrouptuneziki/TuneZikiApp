@@ -1,0 +1,10 @@
+.UserData{
+    position: relative;
+    background: #00000080;
+    margin-top: 1rem;
+    width: 95%;
+    height: 30%;
+    left: 2%;
+    border-radius: 20px;
+    display: block;
+}

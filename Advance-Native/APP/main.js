@@ -1,5 +1,7 @@
 localStorage.setItem('Device','Android');
 
+localStorage.setItem('User','Android');
+
 const BODY=document.querySelector('body');
 
 const DIV=document.querySelector('div');
