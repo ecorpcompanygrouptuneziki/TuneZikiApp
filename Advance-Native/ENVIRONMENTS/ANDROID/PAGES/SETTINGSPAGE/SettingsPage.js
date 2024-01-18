@@ -29,6 +29,14 @@ const ANDROIDSETTINGSPAGE=(DIV,ADVANCE)=>{
 
         <button class='ButtonIcon'>
 
+            <h1 class='ButtonName'>App Help</h1>
+
+            <img id='Right' class='TopRight' src='${WHITEICONS}help.png'/>
+
+        </button>
+
+        <button class='ButtonIcon'>
+
             <h1 class='ButtonName'>Privacy Policy</h1>
 
             <img id='Right' class='TopRight' src='${WHITEICONS}privacypolicy.png'/>
@@ -41,6 +49,14 @@ const ANDROIDSETTINGSPAGE=(DIV,ADVANCE)=>{
 
             <img id='Right' class='TopRight' src='${WHITEICONS}app.png'/>
         
+        </button>
+
+        <button class='ButtonIcon'>
+
+            <h1 class='ButtonName'>Updates</h1>
+
+            <img id='Right' class='TopRight' src='${WHITEICONS}info.png'/>
+
         </button>
 
         <button class='ButtonIcon'>

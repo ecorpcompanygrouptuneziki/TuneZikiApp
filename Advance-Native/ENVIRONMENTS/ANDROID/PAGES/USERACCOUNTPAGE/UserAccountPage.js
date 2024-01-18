@@ -60,6 +60,38 @@ const ANDROIDUSERACCOUNTPAGE=(DIV,ADVANCE)=>{
 
     </button>
 
+    <button class='ButtonIcon'>
+
+        <h1 class='ButtonName'>Business Tools</h1>
+
+        <img id='Right' class='TopRight' src='${WHITEICONS}createdon.png'/>
+
+    </button>
+
+    <button class='ButtonIcon'>
+
+        <h1 class='ButtonName'>Account Data</h1>
+
+        <img id='Right' class='TopRight' src='${WHITEICONS}info.png'/>
+
+    </button>
+
+    <button class='ButtonIcon'>
+
+        <h1 class='ButtonName'>Community</h1>
+
+        <img id='Right' class='TopRight' src='${WHITEICONS}chat.png'/>
+
+    </button>
+
+    <button class='ButtonIcon'>
+
+        <h1 class='ButtonName'>Library</h1>
+
+        <img id='Right' class='TopRight' src='${WHITEICONS}library.png'/>
+
+    </button>
+
     </div>
     
     `);
