@@ -1,0 +1,18 @@
+.DisplayDiv{
+    background:transparent;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50px;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.ButtonIcon{
+    display: inline-flex;
+}
+
+.ButtonName{
+    text-align: left;
+    margin-left: 1rem;
+}

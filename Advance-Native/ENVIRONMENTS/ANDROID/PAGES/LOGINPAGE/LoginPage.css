@@ -9,3 +9,8 @@
     height: 50px;
     display: none;
 }
+
+.ForgotPassword{
+    text-align: right;
+    right: 1rem;
+}

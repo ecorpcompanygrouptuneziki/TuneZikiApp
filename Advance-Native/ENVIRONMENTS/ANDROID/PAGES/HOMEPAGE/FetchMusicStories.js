@@ -45,7 +45,7 @@ const ANDROIDMUSICFEEDFETCH=(DIV,ADVANCE)=>{
             ADD(RELEASEDETAILSHOLDERDIV,RELEASEARTISTNAME);
             
             
-            console.log(element)
+            //console.log(element)
 
         });
 

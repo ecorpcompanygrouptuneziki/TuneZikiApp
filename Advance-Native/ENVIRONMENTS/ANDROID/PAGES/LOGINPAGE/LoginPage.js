@@ -15,6 +15,8 @@ const ANDROIDLOGINPAGE=(DIV,ADVANCE)=>{
     <input type="password"  id="Password" placeholder="Enter Password">
 
     <br>
+
+    <h3 class='ForgotPassword'>Forgot Password</h3>
     
     <button id='LoginUser'>LogIn</button>
 

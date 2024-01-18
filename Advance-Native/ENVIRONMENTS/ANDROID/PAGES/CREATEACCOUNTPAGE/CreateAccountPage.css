@@ -1,0 +1,47 @@
+.LocationButton{
+    display: inline-flex;
+    height: 32px;
+}
+
+#LocationName{
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    display: block;
+    font-size: 15px;
+   
+}
+
+.LocationDiv{
+    background: #010114;
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+
+.PlaceDisplay{
+    position: absolute;
+    background: transparent;
+    width: 98%;
+    height: auto;
+    top: 55px;
+    left: 1%;
+    bottom:0;
+    margin-bottom: 0.3rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid teal;
+    border-radius: 10px;
+    display: block;
+}
+
+#Code{
+    position: relative;
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0.2rem;
+    color: gainsboro;
+}
