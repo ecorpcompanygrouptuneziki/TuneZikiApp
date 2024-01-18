@@ -45,3 +45,8 @@
     margin-right: 0.2rem;
     color: gainsboro;
 }
+
+#CountryLoading{
+    top: 45%;
+    left: 45%;
+}

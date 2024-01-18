@@ -104,6 +104,14 @@ const ANDROIDCREATEACCOUNTPAGE=(DIV,ADVANCE)=>{
 
         const LOCATIONDISPLAY=document.querySelector('.PlaceDisplay');
 
+        ADVANCE.DISPLAYDATA(LOCATIONDISPLAY,`
+
+        <img id='CountryLoading'  class='LoadingIcon' src='${TEALICONS}spinner.png'/>
+        
+        `);
+
+        const LOCATIONHOLDERNAME=document.querySelector('#LocationName');
+
         ADVANCE.GETPACKAGE(ADVANCE.COUNTRIESAPI)
 
         .then((result) => {
@@ -124,6 +132,16 @@ const ANDROIDCREATEACCOUNTPAGE=(DIV,ADVANCE)=>{
                 `)
     
                 ADVANCE.ADDPACKAGE(LOCATIONDISPLAY,LOCATONBUTTON);
+
+                LOCATONBUTTON.addEventListener('click',()=>{
+
+                    STYLED(LOCATIONDIV,'height','0%');
+
+                    STYLED(LOCATIONDIV,'display','none');
+
+                    ADVANCE.DISPLAYDATA(LOCATIONHOLDERNAME,element.name);
+
+                })
 
                 //console.log(element)
 
