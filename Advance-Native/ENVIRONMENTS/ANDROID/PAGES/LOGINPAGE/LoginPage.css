@@ -14,3 +14,11 @@
     text-align: right;
     right: 1rem;
 }
+
+input{
+    border: 1px solid teal;
+}
+
+button{
+    background: teal;
+}

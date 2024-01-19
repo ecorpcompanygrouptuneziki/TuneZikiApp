@@ -1,16 +1,16 @@
-import { ANDROIDAUTOLOGINPAGE } from "../ENVIRONMENTS/ANDROID/PAGES/AUTOLOGINPAGE/AutoLoginPage.js";
+import { ANDROIDCONNECTION } from "../ENVIRONMENTS/ANDROID/CONNECTION/Connection.js"
 
 const APPSTART=(DIV,ADVANCE)=>{
 
-if (localStorage.getItem('Device')==='Android') {
+    if (localStorage.getItem('Device')==='Android') {
+        
+        ANDROIDCONNECTION(DIV,ADVANCE);
     
-    ANDROIDAUTOLOGINPAGE(DIV,ADVANCE);
-  
-} else {
-    
-    console.log('Web')
+    } else {
+        
+        console.log('Web')
 
-}
+    }
     
  
 }

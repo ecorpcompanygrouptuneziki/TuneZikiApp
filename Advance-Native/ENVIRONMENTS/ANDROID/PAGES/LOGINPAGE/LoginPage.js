@@ -10,7 +10,7 @@ const ANDROIDLOGINPAGE=(DIV,ADVANCE)=>{
     
     <h1>Tune Ziki</h1>
 
-    <input type="email"  id="Email" placeholder="Enter Email">
+    <input type="email" id="Email" placeholder="Enter Email">
 
     <input type="password"  id="Password" placeholder="Enter Password">
 
