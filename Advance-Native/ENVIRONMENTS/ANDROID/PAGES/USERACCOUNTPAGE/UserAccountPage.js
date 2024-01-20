@@ -1,4 +1,6 @@
+import { ANDROIDEDITPROFILEPAGE } from "../EDITPROFILEPAGE/EditProfilepage.js";
 import { ANDROIDHOMEPAGE } from "../HOMEPAGE/HomePage.js";
+import { ANDROIDPOSTPAGE } from "../POSTPAGE/PostPage.js";
 
 const ANDROIDUSERACCOUNTPAGE=(DIV,ADVANCE)=>{
 
@@ -28,7 +30,7 @@ const ANDROIDUSERACCOUNTPAGE=(DIV,ADVANCE)=>{
 
     <br>
 
-    <button class='ButtonIcon'>
+    <button id='EditButton' class='ButtonIcon'>
 
         <h1 class='ButtonName'>Edit Profile</h1>
 
@@ -36,7 +38,7 @@ const ANDROIDUSERACCOUNTPAGE=(DIV,ADVANCE)=>{
 
     </button>
 
-    <button class='ButtonIcon'>
+    <button id='PostButton' class='ButtonIcon'>
 
         <h1 class='ButtonName'>Post</h1>
 
@@ -104,6 +106,21 @@ const ANDROIDUSERACCOUNTPAGE=(DIV,ADVANCE)=>{
         
     })
 
+    const EDITBUTTON=document.querySelector('#EditButton');
+
+    EDITBUTTON.addEventListener('click',()=>{
+
+        ANDROIDEDITPROFILEPAGE(DIV,ADVANCE);
+
+    })
+
+    const POSTBUTTON=document.querySelector('#PostButton');
+
+    POSTBUTTON.addEventListener('click',()=>{
+
+        ANDROIDPOSTPAGE(DIV,ADVANCE);
+
+    })
 }
 
 export{ANDROIDUSERACCOUNTPAGE}
